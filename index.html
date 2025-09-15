@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Shopping Market || Home page</title>
+</head>
+<body>
+  
+
+    <!-- /////////////////////////////////////////////////////// -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <div class="container-fluid">  
+    <a class="navbar-brand ms-md-5 ms-sm-3" href="index.html"><img src="images/logo1-removebg-preview.png" alt="" class="logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <div class="user-side-parent">
+        <li class="nav-item">
+          <p class="mt-3 me-5">Hello , <span class="user-name"></span></p>
+        </li>
+        <li class="nav-item">
+                <div class="shoppin-car-side">
+                <i class="fa-solid fa-cart-shopping shoppin-icon"></i>
+                <span class="badge"></span>
+            <div class="item-in-cart ms-md-5">
+              <span class="cart-status-show"></span>
+              <hr>
+                <div></div>
+                <hr>
+                <p class="viewAllProductbtn"><a href="cartProduct.html" >View all Product</a></p>
+            </div>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+         <a href="#" class="logout-a btn btn-danger ms-auto">Log out</a> 
+        </li>
+          </ul>
+        </li>
+          <ul class="header-links">
+                    <li><a href="login.html" class="btn btn-success login-btn">Login in</a></li>
+                    <li><a href="register.html" class="btn btn-primary logout-btn">Register</a></li>
+                </ul>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="container mt-4">
+      <div class="row">
+      <div class="col-md-3">
+        <select id="searchType" class="form-control" onchange="changeSearchMode(this.value)">
+            <option value="Search By Product Name">Search By Product Name</option>
+            <option value="Search By Category">Search By Category</option>
+        </select>
+        </div>
+        <div class="col-md-7">
+        <input type="text" id="searchBox" class="form-control search-bar-input" placeholder="Search By Product Name">
+        </div>
+        <div class="col-md-2">
+          <button class="btn btn-dark col-12" onclick="search()">Search</button>
+        </div>
+    </div>
+    </div>
+
+    
+   <div class="item-side container">
+    <div class="item-parent">
+
+    </div>
+   </div>
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/user.js"></script>
+</body>
+</html>

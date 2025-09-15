@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: white;
+}
+li{
+    list-style-type: none;
+}
+button:focus{
+    box-shadow: none !important;
+}
+.header-links{
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+}
+.header-links li a{
+    display: block;
+    margin-right: 10px;
+    font-size: 18px;
+    color: white;
+}
+.nav-item p{
+    font-size: 17px;
+    font-weight: 500;
+}
+.logo{
+    width : 180px;
+    height: 60px;
+    object-fit: cover;
+}
+.navbar-brand{
+    font-size: 35px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.nav-colass{
+    display: flex;
+    flex-direction: column !important;
+    background-color: red;
+}
+.user-side-parent{
+    display: none;
+}
+.user-side{
+margin-right: 20px;
+text-align: center;
+}
+.user-icon {
+    font-size: 35px;
+}
+.shoppin-car-side{
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+    margin-right: 70px;
+}
+.shoppin-icon{
+    font-size: 20px;
+    color: rgb(70, 70, 128);
+    cursor: pointer;
+}
+.badge{
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    text-align: center;
+    font-size: 14px;
+    color: rgb(70, 70, 128);
+    display: block;
+}
+.item-in-cart{    
+    width: 225px;
+    max-height: 350px;
+    border:1px solid #ddd;
+    background-color: white;
+    position: absolute;
+    top: 73px;
+    right: 0px;
+    z-index: 10;
+    overflow-y: auto;
+    padding: 5px;
+    text-align: center;
+    display: none;
+    
+
+}
+@media (max-width:576px) {
+   .item-in-cart{
+ top: 150px;
+
+   } 
+    
+}
+.viewAllProductbtn{
+    font-size: 18px;
+    width: 100%;
+    margin: 0 !important;
+    margin-top: -5px !important;
+    margin-bottom: 5px !important;
+    padding: 5px;
+    text-align: center;
+}
+.viewAllProductbtn a{
+    color: rgb(10, 10, 10);
+
+}
+.viewAllProductbtn:hover{
+    background-color:  #ecf0f1
+}
+.added-item-div{
+    width: 100%;
+    height: 115px;
+    background-color: #ecf0f1;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    margin-top: 9px;
+    display: flex;
+    padding: 8px;
+    padding-top: 15px;
+    gap: 30px;
+}
+.added-item-div button{
+    background-color:transparent;
+    border: 0;
+}
+.added-item-div .increase-btn , .added-item-div .decrease-btn{
+width: 25px;
+height:30px;
+border: 1px solid rgb(73, 73, 73);
+border-radius: 4.5px;
+margin-left: 2px;
+
+}
+.added-item-div .increase-btn:hover , .added-item-div .decrease-btn:hover{
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
+.added-item-div span{
+    padding-left: 1px;
+}
+.login-btn  {
+    background-color: transparent;
+    color: rgb(25, 135, 84) !important;
+}
+.logout-btn{
+    background-color: transparent;
+    color: rgb(13, 110, 253) !important;
+
+}
+.login-btn:hover , .logout-btn:hover{
+    color: white !important;
+}
+.logout-a{
+ font-size: 20px;
+ border: 1px solid rgb(163, 7, 7);
+ background: transparent;
+ color :rgb(163, 7, 7);
+ margin-top: 7px; 
+ height: 40px; 
+ padding-top: 2px !important;
+
+}
+.search-bar{
+    margin-top: 50px;
+}
+.search-bar input{
+    padding: 5px 20px;
+    font-size: 17px;
+    border-radius: 4px;
+}
+.search-bar select{
+    padding: 5px 20px;
+    border-radius: 4px;
+
+}
+.item-side{
+    margin-top: 15px;
+}
+.item-parent{
+    width: 100%;
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+}
+.item-div{
+    width:90%;
+    height: 450px;
+    margin: auto;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: capitalize;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    
+}
+.item-div:hover{
+    transform: translateY(-15px);
+    box-shadow: 2px 2px 15px 1px rgb(139, 139, 139);
+    border: 1px solid rgba(1, 153, 255, 0.7);
+}
+.item-div img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover !important;
+    display: block;
+    transition: .3s ease;
+}
+.item-div img:hover{
+    transform: scale(1.07);
+}
+.item-div h4{
+    margin: 15px 0 ;
+}
+.btn-i-div{
+    display: flex !important;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+    transition: .5s;
+}
+.item-div div  i{
+    cursor: pointer;
+}

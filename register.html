@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoppin Mart || Register page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <div class="container-fluid">
+   <a class="navbar-brand ms-md-5 ms-sm-3" href="index.html"><img src="images/logo1-removebg-preview.png" alt="" class="logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          </ul>
+        </li>
+    </div>
+  </div>
+</nav>
+
+<form class="row g-3 needs-validation form-parent" novalidate>
+  <div class="col-md-6">
+    <label for="validationCustom01" class="form-label">First name</label>
+    <input type="text" class="form-control regis-username" id="validationCustom01" placeholder="Enter first name" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom02" class="form-label">Last name</label>
+    <input type="text" class="form-control" id="validationCustom02" placeholder="Enter last name" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-12">
+    <label for="validationCustomUsername" class="form-label">Email</label>
+    <div class="input-group has-validation">
+      <input type="email" class="form-control regis-email" id="validationCustomUsername" aria-describedby="inputGroupPrepend" placeholder=" Enter Email" required>
+      <div class="invalid-feedback">
+        Please enter email.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-12">
+    <label for="validationCustom03" class="form-label">Password</label>
+    <input type="password" class="form-control regis-password" id="validationCustom03" placeholder=" Enter your password" required>
+    <div class="invalid-feedback">
+      Please enter a password.
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary regis-btn" type="submit">Register</button>
+  </div>
+<p>Have an account ? <a href="login.html" class="to-login-page-a">Login</a></p>
+</form>
+
+
+
+
+
+
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>
