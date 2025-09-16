@@ -163,7 +163,7 @@ margin-left: 2px;
  background: transparent;
  color :rgb(163, 7, 7);
  margin-top: 7px; 
- max-height: 70px; 
+ height:auto; 
  padding-top: 2px !important;
 
 }
